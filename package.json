@@ -4,7 +4,9 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "build-api-docs": "redocly build-docs resources/api-docs/example-api.yaml -o public/build/api-docs.html",
+        "lint-api-docs": "redocly lint resources/api-docs/example-api.yaml"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
