@@ -1,0 +1,42 @@
+openapi: 3.1.0
+
+info:
+  title: Steadfast Collective's OpenAPI HttpFoundation Testing Laravel Example
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:8000/api
+
+paths:
+  '/pet-name':
+    get:
+      summary: Get a random pet name
+      responses:
+        '200':
+          description: Ok
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                    - name
+                properties:
+                  name:
+                    type: string
+                    example: Taz
+    put:
+      summary: Add a Pet Name to the list
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                -  name
+              properties:
+                name:
+                  type: string
+
+      responses:
+        '201':
+          description: Pet Name Created
