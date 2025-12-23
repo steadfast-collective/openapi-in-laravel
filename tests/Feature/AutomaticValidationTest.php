@@ -19,7 +19,7 @@ class AutomaticValidationTest extends TestCase
     /**
      * Check that our API response returns the name of a pet.
      */
-    public function test_the_endpoint_returns_a_cat_name(): void
+    public function test_it_can_read_pet_name(): void
     {
         // Make our request as usual - because of the HasValidatingJsonMethods
         // both the Request and Response will be automatically validated
