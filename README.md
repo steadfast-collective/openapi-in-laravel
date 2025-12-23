@@ -6,8 +6,11 @@ This is an example repository to demonstrate how we use OpenAPI at [Steadfast Co
 This example uses:
  - Laravel 12
  - PHP 8.4
+ - OpenAPI Specification v3.1.0 in YAML
 
-## Setup
+## Getting Started
+Our OpenAPI file is located in: [resources/api-docs/example-api.yaml](resources/api-docs/example-api.yaml)
+
 To run the examples locally:
 
 ```bash
@@ -52,5 +55,8 @@ Tests:    1 failed (0 assertions)
 Duration: 0.22s
 ```
 
-## See Also
+# See Also
+ - [learn.openapis.org](https://learn.openapis.org/) - A great starting place for learning to write OpenAPI Specifications
+ - [spec.openapis.org](https://spec.openapis.org/) - The official specification for OpenAPI
  - [Ostel's HttpFoundation Testing exmple](https://github.com/osteel/openapi-httpfoundation-testing-laravel-example)
+ - [jsonapi.org](https://jsonapi.org/) - Don't re-invent the wheel when designing your API. Someone has already figured out how to do pagination.
