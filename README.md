@@ -79,6 +79,17 @@ Run `npm run lint-api-docs` to check your API docs are valid. Use this in your C
 
 Run `npm run build-api-docs` to build your user-facing API documentation in `build/api-docs.html`. Use this in your deployment script.
 
+## Redocly as a Requirement
+As an uncommon requirement, we add this to our `composer.json` to ensure `composer.json` fails if redocly has not been installed:
+```json
+{
+    "post-install-cmd": [
+        "echo 'Check that the redocly-cli command is available on the command line'",
+        "redocly --version"
+    ]
+}
+```
+
 # See Also
  - [learn.openapis.org](https://learn.openapis.org/) - A great starting place for learning to write OpenAPI Specifications
  - [spec.openapis.org](https://spec.openapis.org/) - The official specification for OpenAPI
