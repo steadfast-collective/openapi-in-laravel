@@ -2,9 +2,13 @@
 
 This is an example repository to demonstrate how we use OpenAPI at [Steadfast Collective](https://www.steadfastcollective.com).
 
+
 It showcases two techniques we use:
  - OpenAPI Specification Testing
  - OpenAPI Document Generation
+
+
+There is an acompanying blog post here: [https://steadfastcollective.com/articles/api-design-with-laravel-for-third-parties-you-dont-control](https://steadfastcollective.com/articles/api-design-with-laravel-for-third-parties-you-dont-control)
 
 ## Compatibility
 This example uses:
